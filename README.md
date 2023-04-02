@@ -9,4 +9,4 @@ Esta atividade foi proposta pela professora Stefani Silva Pires, docente do camp
 * [Alícia Gianny](https://github.com/alicia-gianny)
 * [Camilly Camacam](https://github.com/CamillyCamacam)
 * [Gean Martins](https://github.com/oxegean)
-* Nádila Andrade
+* [Nádila Andrade](https://github.com/nadila4info)
