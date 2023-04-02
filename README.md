@@ -6,7 +6,7 @@ Esta atividade foi proposta pela professora Stefani Silva Pires, docente do camp
 ## DISCENTES QUE COMPÕEM A EQUIPE CUSCUZ COM OVO:
 (em ordem alfabética)
 
-* Alícia Gianny
-* Camilly Camacam 
-* Gean Martins
+* [Alícia Gianny](https://github.com/alicia-gianny)
+* [Camilly Camacam](https://github.com/CamillyCamacam)
+* [Gean Martins](https://github.com/oxegean)
 * Nádila Andrade
