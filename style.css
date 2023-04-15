@@ -1,26 +1,32 @@
-body{
-background-color: #FFD223;
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&display=swap');
+
+body {
+    background-color: #FFD223;
 }
-h1{
+
+h1 {
     /* AQUI VOCÊ APRENDERÁ HTML5 E CSS3 */
-
-font-family: 'Barlow Condensed';
-font-style: normal;
-font-weight: 700;
-font-size: 64px;
-line-height: 77px;
-text-align: center;
-color: #000000;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 77px;
+    text-align: center;
+    color: #000000;
 }
-<<<<<<< Updated upstream
-=======
 
-div{
+h3 {
+    /* SEJA BEM VINDO A PÁGINA CUSCUZ COM OVO */
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    text-align: center;
+    color: #0009D6;
+}
+
+div {
+    background-color: white;
     border-radius: 8px;
-    width: 500px;
-    height: 500px;
-    border: white;
     padding: 20px;
-    border-color: white;
+    box-shadow: #000000;
+    margin: 20px;
 }
->>>>>>> Stashed changes
