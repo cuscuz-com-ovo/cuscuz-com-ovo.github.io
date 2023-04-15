@@ -4,18 +4,23 @@ background-color: #FFD223;
 h1{
     /* AQUI VOCÊ APRENDERÁ HTML5 E CSS3 */
 
-position: absolute;
-width: 558px;
-height: 142px;
-left: 473px;
-top: 298px;
-
 font-family: 'Barlow Condensed';
 font-style: normal;
 font-weight: 700;
 font-size: 64px;
 line-height: 77px;
 text-align: center;
-
 color: #000000;
 }
+<<<<<<< Updated upstream
+=======
+
+div{
+    border-radius: 8px;
+    width: 500px;
+    height: 500px;
+    border: white;
+    padding: 20px;
+    border-color: white;
+}
+>>>>>>> Stashed changes
