@@ -10,3 +10,17 @@ Esta atividade foi proposta pela professora Stefani Silva Pires, docente do camp
 * [Camilly Camacam](https://github.com/CamillyCamacam)
 * [Gean Martins](https://github.com/oxegean)
 * [Nádila Andrade](https://github.com/nadila4info)
+
+---
+
+## PROTÓTIPO DA PÁGINA INICIAL DO PROJETO:
+
+![page_1_index-cuscuz-com-ovo](https://user-images.githubusercontent.com/127505403/232234532-7e6df2ee-c195-41a5-96a2-6749cf942cf8.jpg)
+
+## MODELO PARA AS PÁGINAS COM CONTEÚDO HTML E CSS:
+
+![page_1_html-css-cuscuz-com-ovo (1)](https://user-images.githubusercontent.com/127505403/232234659-4e6735d3-b820-43ac-ae5f-efa691ed3ca0.jpg)
+
+## MODELO PARA A PÁGINA SOBRE:
+
+![page_1_sobre-cuscuz-com-ovo (2)](https://user-images.githubusercontent.com/127505403/232234735-3c483ab0-a575-4e94-9ee9-bdd85eb94d57.jpg)
