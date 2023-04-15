@@ -1,27 +1,70 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Inicial</title>
-    <link rel ="stylesheet" href="style.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=BioRhyme:wght@300;400&display=swap');
-        p{
-            text-align: center;
-            font-family: 'BioRhyme', serif;
-        }
-    </style>
+    <title>CUSCUZ COM OVO</title>
+    <link rel = "icon" href="images/icon.png" type = "image/icon">
+    <link rel ="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/fundo-style.css">
 
 </head>
+
 <body>
 
-    <div>
-        <h3>SEJA BEM VINDO A PÁGINA CUSCUZ COM OVO!</h1>
-        <h1>AQUI VOCÊ APRENDERÁ<br>HTML5 E CSS3</h3>
-        <p>ROLE PARA BAIXO PARA<br>INICIAR</p>
-    </div>
-    
+    <nav id = "menu"> <!-- INICIO DA BARRA DE NAVEGAÇÃO -->
+        <ul>
+            <li><a href="index.html"><img src="images/logo-menu-sem-fundo.png" alt="logo-menu"></a></li>
+            <li><a href="html.html">HTML</a></li>
+            <li><a href="css.html">CSS</a></li>
+            <li><a href="sobre.html">SOBRE</a></li>
+        </ul>
+    </nav> <!-- FIM DA BARRA DE NAVEGAÇÃO -->
+
+    <div id = "box-branco"> <!-- INICIO DO BOX PRINCIPAL -->
+
+        <center><h3>SEJA BEM VINDO A PÁGINA 
+        <h3 style = "color:#FFD223;">CUSCUZ</h3> 
+        <h3 style = "color: #c2c1c1;">COM</h3> 
+        <h3 style = "color: #FFD223;">OVO</h3></h3></center>
+        <br><h1 id = "titulo">AQUI VOCÊ APRENDERÁ<br>HTML5 E CSS3</h3>
+        <br><center><p id = "code">ROLE PARA BAIXO PARA<br>INICIAR</p></center>
+        <br><br>
+        <div class = "color"><!--utiliza a classe color para criar um triangulo cinza-->
+            <div><!-- TRIANGULO --></div>
+        </div>
+
+        <div id = "box-azul"> <!-- BOX AZUL -->
+
+            <div id= "side-box" > <!-- BOX QUE FLUTUA NA ESQUERDA -->
+                <h1 id = "titulo-2" style = "color: white"> HTML </h1>
+                <h1 style = "color: #FFD223;"> O QUE É? </h1>
+                <p id = "code" style="text-align: justify;">EXPLICA O QUE É HTML EM POUCAS PALAVRAS E PARA QUE SERVE</p>
+            </div>
+            
+            <div>
+                <pre>
+                    <p id = "code">EXEMPLO:</p>
+                    <code>
+                    &lt;!DOCTYPE html>
+                    &lt;html> 
+                    &lt;!-- This is the sintax of a comment --><head>
+                    &lt;title> My first HTML page! </title> 
+                    &lt;/head> 
+                    &lt;body> 
+                    Hello, funny world! This is my first HTML page! 
+                    &lt;/body> 
+                    &lt;/html> 
+                    </code>
+                </pre>  
+            </div>
+
+        </div> <!-- FIM DO BOX AZUL -->
+
+    </div> <!-- FIM DO BOX PRINCIPAL-->
+
 </body>
+
 </html>
