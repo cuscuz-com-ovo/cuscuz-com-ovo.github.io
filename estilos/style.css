@@ -2,12 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=BioRhyme:wght@300;400&family=Inter&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=BioRhyme:wght@300;400&display=swap');
 
-*{
-    margin: 0 auto;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     background-color: #FFD223;
 }
@@ -66,8 +60,7 @@ h3 {
 }
 
 pre {
-    box-sizing:content-box;
-    position: relative;
+    position:absolute;
     width:fit-content;
     height:fit-content;
     left:auto;
