@@ -35,7 +35,7 @@ h3 {
 
 #titulo-2{
     /* HTML - CSS */
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: 'Barlow Condensed',sans-serif;
     font-weight: 700;
     font-size: 90px;
     line-height: 77px;
@@ -60,12 +60,16 @@ h3 {
 }
 
 pre {
-    position:absolute;
-    width:fit-content;
-    height:fit-content;
-    left:auto;
-    top:auto;
     background: #D9D9D9;
     border-radius: 10px; 
     padding: 2%;
+
+}
+
+button{
+    background-color:#FFD223;
+    height: 10%;
+    width: max-content;
+    border-radius: 13%;
+    font-family: 'Barlow Condensed',sans-serif;
 }

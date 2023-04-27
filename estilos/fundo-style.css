@@ -26,6 +26,7 @@ nav#menu ul li {
 #menu ul li a:hover {
     display: inline-block;
     color:#FFD223;
+    border-bottom-color: #FFD223;
 }
 
 nav#menu ul li a:first-child {
@@ -46,26 +47,51 @@ nav#menu ul li a:first-child {
     "footer footer footer";
 
     margin: 0px 20px 0px 20px;
-    grid-gap: 0.6rem;
+}
+
+.container-index > main{
+    border-radius: 8px 8px 0px 0px;
+}
+
+.container-index > #content4 {
+    border-end-start-radius: 8px;
+}
+
+.container-index > #content6 {
+    border-end-end-radius: 8px;
+}
+
+.container-index > nav{
+    margin-bottom: 10px;
+}
+
+.container-index > footer {
+    margin-top: 10px;
 }
 
 #content1 {
     background-color:#0009D6;
     grid-area: content1;
-    padding: 20px 40px 20px 40px;
+    padding: 20px 80px 20px 80px;
+    text-justify: center;
 
 }
 
 #content2 {
     background-color:#0009D6;
     grid-area: content2;
-    padding: 40px;
+    padding: 0px;
+    display: inline-block;
+    vertical-align:bottom;
 }
 
 #content3 {
     background-color:#0009D6;
     grid-area: content3;
-    align-content: end;
+    display:grid;
+    justify-content:end;
+    padding: 20px 40px 20px 40px;
+
 }
 
 #content4 {
@@ -97,9 +123,12 @@ nav#menu ul li a:first-child {
     margin: 0px 20px 0px 20px;
 }
 
+.container-conteudo > main {
+    border-radius: 8px;
+}
+
 main, #sidebar, footer {
     padding: 10px;
-    border-radius: 8px;
     box-shadow: rgba(50, 50, 93, 0.25) 
     0px 6px 12px -2px, 
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
