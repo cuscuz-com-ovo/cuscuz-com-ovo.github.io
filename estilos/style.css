@@ -9,9 +9,7 @@ body {
 h1 {
     /* TITULO DE PAGINAS OU TOPICOS */
     font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 700;
-    font-size: 64px;
-    line-height: 77px;
+    font-size: 5vw;
 }
 
 h3 {
@@ -20,15 +18,16 @@ h3 {
     display: inline;
     font-weight: 500;
     font-size: 28px;
+    padding: 0px;
     color: #0009D6;
 }
 
 #titulo{
     /* AQUI VOCÊ APRENDERÁ HTML5 E CSS3 */
     font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 700;
-    font-size: 64px;
-    line-height: 77px;
+    font-size: 5vw;
+    padding: 0%;
+    margin: 0%;
     text-align:center;
     color: #000000;
 }
@@ -36,14 +35,21 @@ h3 {
 #titulo-2{
     /* HTML - CSS */
     font-family: 'Barlow Condensed',sans-serif;
-    font-weight: 700;
-    font-size: 90px;
-    line-height: 77px;
+    font-size: 10vw;
+    padding: 0%;
+    margin: 0%;
 }
 
 #code { 
     /* FONTE UTILIZADA PARA CÓDIGOS */
     font-family: 'BioRhyme', serif;
+    padding: 0%;
+    margin: 0px;
+}
+
+code{
+    padding: 0px;
+    margin: 0%;  
 }
 
 .color{
@@ -53,6 +59,7 @@ h3 {
     border-left: 25px solid transparent;
     border-right: 25px solid transparent;
     border-top: 25px solid #D9D9D9;
+    margin-left: 48%;
 }
 .color > div{
     width:0px;
@@ -61,15 +68,16 @@ h3 {
 
 pre {
     background: #D9D9D9;
-    border-radius: 10px; 
-    padding: 2%;
-
+    padding: 15px;
+    border-radius: 8px;
+    
 }
 
-button{
-    background-color:#FFD223;
-    height: 10%;
-    width: max-content;
-    border-radius: 13%;
-    font-family: 'Barlow Condensed',sans-serif;
-}
+#button {
+    text-decoration: none;
+  }
+
+  #button:hover {
+    background-color: #FFD223;
+    color: #000000;
+  }

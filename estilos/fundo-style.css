@@ -50,6 +50,7 @@ nav#menu ul li a:first-child {
 }
 
 .container-index > main{
+    padding: 5%;
     border-radius: 8px 8px 0px 0px;
 }
 
@@ -70,43 +71,53 @@ nav#menu ul li a:first-child {
 }
 
 #content1 {
+    /* O QUE É HTML */
     background-color:#0009D6;
     grid-area: content1;
-    padding: 20px 80px 20px 80px;
+    padding: 40px 80px 40px 80px;
     text-justify: center;
 
 }
 
 #content2 {
+    /* EXEMPLO HTML */
     background-color:#0009D6;
     grid-area: content2;
-    padding: 0px;
-    display: inline-block;
-    vertical-align:bottom;
+    display: flex;
+    vertical-align: middle;
 }
 
 #content3 {
+    /* BOTÃO APRENDA HTML */
     background-color:#0009D6;
     grid-area: content3;
-    display:grid;
     justify-content:end;
     padding: 20px 40px 20px 40px;
 
 }
 
 #content4 {
+    /* O QUE É CSS */
     background-color: white;
     grid-area: content4;
+    padding: 40px 80px 40px 80px;
+    text-justify: center;
 }
 
 #content5 {
+    /* EXEMPLO CSS */
     background-color: white;
     grid-area: content5;
+    display: flex;
+    vertical-align: middle;
 }
 
 #content6 {
+    /* BOTÃO APRENDA CSS */
     background-color: white;
     grid-area: content6;
+    padding: 20px 40px 20px 40px;
+
 }
 
 .container-conteudo {
@@ -154,5 +165,6 @@ main {
 
 footer {
     background-color: #0009D6;
+    border-radius: 8px;
     grid-area: footer;
 }
