@@ -50,6 +50,16 @@ h3 {
 #code { 
     /* FONTE UTILIZADA PARA CÓDIGOS */
     font-family: 'BioRhyme', serif;
+    font-size: small;
+    padding: 0px;
+    margin: 0px;
+}
+
+#exemplo {
+    /* FONTE UTILIZADA PARA EXEMPLO */
+    font-family: 'Barlow Condensed', sans-serif;
+    color: rgb(148, 144, 144);
+    font-size:larger;
     padding: 0px;
     margin: 0px;
 }
@@ -83,7 +93,7 @@ pre {
     text-decoration: none;
   }
 
-  #button:hover {
+#button:hover {
     background-color: #FFD223;
     color: #000000;
   }
