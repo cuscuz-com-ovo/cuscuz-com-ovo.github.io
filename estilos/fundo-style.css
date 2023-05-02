@@ -1,0 +1,170 @@
+nav#menu ul{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 8px;
+    background-color: #0009D6;
+    box-shadow: rgba(50, 50, 93, 0.25) 
+    0px 6px 12px -2px, 
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+nav#menu ul li {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#menu ul li a {
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Inter', sans-serif;
+}
+
+#menu ul li a:hover {
+    display: inline-block;
+    color:#FFD223;
+    border-bottom-color: #FFD223;
+}
+
+nav#menu ul li a:first-child {
+    padding-top: 0px;
+    vertical-align: middle;
+}
+
+.container-index {
+    display: grid;
+    height: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "nav nav nav"
+    "main main main"
+    "content1 content2 content3"
+    "content4 content5 content6"
+    "footer footer footer";
+
+    margin: 0px 20px 0px 20px;
+}
+
+.container-index > main{
+    padding: 5%;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.container-index > #content4 {
+    border-end-start-radius: 8px;
+}
+
+.container-index > #content6 {
+    border-end-end-radius: 8px;
+}
+
+.container-index > nav{
+    margin-bottom: 10px;
+}
+
+.container-index > footer {
+    margin-top: 10px;
+}
+
+#content1 {
+    /* O QUE É HTML */
+    background-color:#0009D6;
+    grid-area: content1;
+    padding: 40px 80px 40px 80px;
+    text-justify: center;
+
+}
+
+#content2 {
+    /* EXEMPLO HTML */
+    background-color:#0009D6;
+    grid-area: content2;
+    display: flex;
+    vertical-align: middle;
+}
+
+#content3 {
+    /* BOTÃO APRENDA HTML */
+    background-color:#0009D6;
+    grid-area: content3;
+    justify-content:end;
+    padding: 20px 40px 20px 40px;
+
+}
+
+#content4 {
+    /* O QUE É CSS */
+    background-color: white;
+    grid-area: content4;
+    padding: 40px 80px 40px 80px;
+    text-justify: center;
+}
+
+#content5 {
+    /* EXEMPLO CSS */
+    background-color: white;
+    grid-area: content5;
+    display: flex;
+    vertical-align: middle;
+}
+
+#content6 {
+    /* BOTÃO APRENDA CSS */
+    background-color: white;
+    grid-area: content6;
+    padding: 20px 40px 20px 40px;
+
+}
+
+.container-conteudo {
+    display: grid;
+    height: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "nav nav nav nav"
+    "sidebar main main main"
+    "footer footer footer footer";
+
+    grid-gap: 0.6rem;
+    margin: 0px 20px 0px 20px;
+}
+
+.container-conteudo > main {
+    border-radius: 8px;
+}
+
+main, #sidebar, footer {
+    padding: 0px 30px 10px 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 
+    0px 6px 12px -2px, 
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+nav {
+    grid-area: nav;
+    border-radius: 8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 
+    0px 6px 12px -2px, 
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+main {
+    background-color: white;
+    grid-area: main;
+}
+
+#sidebar {
+    background-color: darkgray;
+    grid-area: sidebar;
+}
+
+footer {
+    background-color: #0009D6;
+    border-radius: 8px;
+    grid-area: footer;
+}
