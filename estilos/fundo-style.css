@@ -54,6 +54,10 @@ nav#menu ul li a:first-child {
     border-radius: 8px 8px 0px 0px;
 }
 
+.container-index > #content2{
+    display: flex;
+}
+
 .container-index > #content4 {
     border-end-start-radius: 8px;
 }
