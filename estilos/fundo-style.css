@@ -90,7 +90,7 @@ nav#menu ul li a:first-child {
     /* O QUE É HTML */
     background-color:#0009D6;
     grid-area: content1;
-    padding: 40px 100px 40px 100px;
+    padding: 30px 100px 70px 100px;
     text-justify: center;
     
 }
@@ -116,7 +116,7 @@ nav#menu ul li a:first-child {
     /* O QUE É CSS */
     background-color: white;
     grid-area: content4;
-    padding: 40px 100px 40px 100px;
+    padding: 30px 100px 70px 100px;
     text-justify: center;
 }
 
@@ -183,5 +183,6 @@ main {
 footer {
     background-color: #0009D6;
     border-radius: 8px;
+    padding: 10px;
     grid-area: footer;
 }

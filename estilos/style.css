@@ -13,11 +13,30 @@ p{
     font-family: 'Inter', sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+table {
+    margin: 0 auto;
+}
+
+table > tr > th> a:hover {
+    color:#FFD223;
+}
+
 h1 {
     /* TITULO DE PAGINAS OU TOPICOS */
     font-family: 'Barlow Condensed', sans-serif;
     font-size: 5vw;
 }
+
+td, th {
+    padding: 10px 20px 10px 20px;
+    margin: 0;
+    text-align: center;
+  }
 
 h3 {
     /* SEJA BEM VINDO A PÁGINA CUSCUZ COM OVO */
