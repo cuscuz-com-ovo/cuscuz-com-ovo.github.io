@@ -185,8 +185,4 @@ footer {
     border-radius: 8px;
     padding: 10px;
     grid-area: footer;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
 }
