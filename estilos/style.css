@@ -1,11 +1,19 @@
+<<<<<<< Updated upstream
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=BioRhyme:wght@300;400&family=Inter&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=BioRhyme:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800;900&family=BioRhyme:wght@300;400&family=Inter&display=swap');
+=======
+* {
+    font-family: 'Times New Roman', serif;
+    font-size: 25 px;
+}
+>>>>>>> Stashed changes
 
 body {
-    background-color: #FFD223;
+    margin:0px;
 }
+<<<<<<< Updated upstream
 
 p{
     font-family: 'Barlow Condensed', sans-serif;
@@ -87,3 +95,9 @@ pre {
     background-color: #FFD223;
     color: #000000;
   }
+=======
+p, h1, h2, h3 {
+    text-align: justify;
+    padding: 0px 280px 20px 280px;
+}
+>>>>>>> Stashed changes
