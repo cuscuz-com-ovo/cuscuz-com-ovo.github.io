@@ -9,6 +9,7 @@
 
 body {
     margin:0px;
+    background-color: #FFD223;
 }
 
 p{
@@ -146,5 +147,5 @@ pre {
   }
 
 #button:hover {
-
+    
   }
