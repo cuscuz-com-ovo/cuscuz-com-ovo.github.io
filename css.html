@@ -21,34 +21,352 @@
             <li><a href="css.html">CSS</a></li>
             <li><a href="sobre.html">SOBRE</a></li>
         </ul>
-        </nav> <!-- FIM DA BARRA DE NAVEGAÇÃO -->
+    </nav> <!-- FIM DA BARRA DE NAVEGAÇÃO -->
 
         <main> <!-- INICIO DO CONTEUDO PRINCIPAL -->
 
-            <h1>CSS</h1>
-            <p>Aqui terá o conteúdo de CSS, contando sua história, o que é e explicacoes de tópicos.</p>
+            <h1 id="1">CSS</h1>
+            <p> CSS é uma linguagem de marcação, amplamente utilizada com HTML ou XHTML, 
+                e representa diversas possibilidades para a formatação. O CSS ajuda a editar, 
+                alinhar, remover e trabalhar no espaço entre elementos de uma página. </p>
             
-            <h3>Subtópico CSS</h2>
+            <h3 id="2">História do CSS</h2>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias facilis, dolore quaerat porro vel eveniet perspiciatis mollitia quia ipsam quam maxime, obcaecati, omnis dicta sit eius nam sunt quo! Porro?</p>
+            <p>O CSS foi desenvolvido em 1996, pelo World Wide Web Consortium, para complementar o HTML, 
+               uma vez que este não contém tags para formatação de página, sendo necessária a escrita da
+               marcação para o site. Esse processo se tornou desgastante e caro para desenvolvedores. 
+               Por essa razão, uma nova alternativa foi criada.</p>
+            <p>O CSS tem a tarefa de separar o conteúdo do site de sua apresentação visual, alterando 
+               elementos como cor do texto, fonte e espaçamento entre blocos, assim como todo o aspecto
+               estético de uma página.</p>
+            <p>Portanto, o HTML é uma linguagem de marcação, ou seja, a base de um site, enquanto o CSS 
+                se encarrega de toda a sua apresentação, que deve ser agradável e atrativa para o usuário.</p>
 
             <div> <!-- INÍCIO DO BLOCO DE EXEMPLO-->
                 <pre>
-                <p id = "code">EXEMPLO:</p>
-<p>exemplo de um códido qualquer em css
-
-p {
-    color: black;
-    padding: 30px;
-    margin: 10px;
-}
-</p>
-</pre>
+                    <p id = "code">EXEMPLO:</p>
+                    <p>
+                        body {
+                            background-color: lightblue;
+                        }
+                        
+                        h1 {
+                            color: white;
+                            text-align: center;
+                        }
+                        
+                        p {
+                            font-family: verdana;
+                            font-size: 20px;
+                        }
+                    </p>
+                </pre>
             </div> <!-- FIM DO BLOCO DE EXEMPLO -->
+            <br>
+            <h3 id="3">Sintaxe</h2>
+
+            <p>Uma regra CSS consiste em um seletor e um bloco de declaração.</p>
+            <p>Declarações são agrupadas em blocos, que estão delimitados na estrutura com uma 
+                chave de abertura, '{', e fechadas com outra, '}'. Os blocos as vezes podem estar 
+                aninhados, a abertura e fechamento de chaves no bloco CSS deve ser realizada.</p>
+            <p>O CSS associa as condições com os blocos de declaração. Cada bloco (válido) é 
+                precedido por um ou mais seletores, separados por vírgula, que são condições 
+                selecionando alguns elementos da página. O grupo de seletores é chamado de regra.</p>
+        
+            <div> <!-- INÍCIO DO BLOCO DE EXEMPLO-->
+                <pre>
+                    <p id = "code">EXEMPLO:</p>
+                    <p>
+                        p {
+                            color: red;
+                            text-align: center;
+                          }
+                    </p>
+                </pre>
+            </div> <!-- FIM DO BLOCO DE EXEMPLO -->
+            <br>               
+            <h3 id="4">Como adicionar (external, internal e inline)</h2>
+
+            <p>Existem três maneiras de inserir CSS no seu projeto:</p>
+            <p><b>External:</b></p>
+            <p>Com uma folha de style sheet, você pode alterar a aparência de um site 
+                inteiro alterando apenas um arquivo. Cada página HTML deve incluir uma referência 
+                ao arquivo de style sheet externo dentro do elemento &lt;link >, dentro da seção head.</p>
+            <p><b>Internal:</b></p>
+            <p>Uma folha de estilo interna pode ser usada se uma única página HTML tiver um estilo único.
+                O estilo interno é definido dentro do elemento '&lt;style >', dentro da seção 'head'. </p>
+            <p><b>Inline:</b></p>
+            <p>Um estilo inline pode ser usado para aplicar um estilo único a um único elemento.
+                Para usar estilos inlines, adicione o atributo style ao elemento relevante. 
+                O atributo style pode conter qualquer propriedade CSS.</p>
+                        
+            <div> <!-- INÍCIO DO BLOCO DE EXEMPLO-->
+                <pre>
+                    <p id = "code">EXEMPLO:</p>
+                    <p> External:                        
+                        &lt;link rel="stylesheet" href="mystyle.css>
+                    </p>
+                    <p> Internal:
+                        &lt;style
+                            body {
+                              background-color: linen;
+                            }
+                            
+                            h1 {
+                              color: maroon;
+                              margin-left: 40px;
+                            }
+                        /style>
+                    </p>
+                    <p>Inline:
+                        &lt;!DOCTYPE html>
+                        &lt;html>
+                            &lt;body>
+                                &lt;h1 style="color:blue;text-align:center;">Isto é um cabeçalho.&lt;/h1>
+                                &lt;p style="color:red;">Isto é um parágrafo.&lt;/p>
+                            &lt;/body>
+                        &lt;/html>
+                    </p>
+
+                    
+                </pre>
+            </div> <!-- FIM DO BLOCO DE EXEMPLO -->
+            <br>                  
+            <h3 id="5">Comentários em CSS</h2>
+
+            <p>Os comentários são usados ​​para explicar o código e podem ajudar quando você editar o código-fonte 
+                posteriormente, estes comentários são ignorados pelos navegadores. Um comentário CSS é colocado dentro 
+                do elemento &lt;style> e começa /*e termina com */:</p>
+                                                       
+            <div> <!-- INÍCIO DO BLOCO DE EXEMPLO-->
+                <pre>
+                    <p id = "code">EXEMPLO:</p>
+                    <p>
+                      p {
+                        color: green;  /* Define a cor do texto para verde*/
+                      }
+                    </p>
+                </pre>
+            </div> <!-- FIM DO BLOCO DE EXEMPLO -->
+            <br>                          
+            <h3 id="6">Cores (background e texto)</h2>
+
+            <p>Em CSS, uma cor pode ser especificada usando um nome de cor predefinido. 
+                CSS/HTML suporta 140 nomes de cores padrão.</p>         
+            <p>Você pode definir a cor dos textos ou de um elemento e de todo o fundo da página.</p>                       
+                                
+            <div> <!-- INÍCIO DO BLOCO DE EXEMPLO-->
+                <pre>
+                    <p id = "code">EXEMPLO:</p>
+                    <p>Texto:
+                        &lt;h1 style="color:Tomato;">Hello World &lt;/h1>
+                    </p>
+                    <p>Background:
+                        body {
+                            background-color: lightblue;
+                          }
+                    </p>
+                </pre>
+            </div> <!-- FIM DO BLOCO DE EXEMPLO -->                        
+            <br>
+            <h3 id="7">Bordas</h2>
+
+            <p>As propriedades de borda do CSS permitem que você especifique o estilo, 
+                a largura e a cor da borda de um elemento.</p>
+            <p>A propriedade border-style especifica que tipo de borda exibir. Os seguintes valores são permitidos:
+                    
+                <p><b>dotted</b> - Define uma borda pontilhada
+                <p><b>dashed</b> - Define uma borda tracejada
+                <p><b>solid</b> - Define uma borda sólida
+                <p><b>double</b> - Define uma borda dupla
+                <p><b>groove</b> - Define uma borda ranhurada 3D. O efeito depende do valor da cor da borda
+                <p><b>ridge</b> - Define uma borda ondulada 3D. O efeito depende do valor da cor da borda
+                <p><b>inset</b> - Define uma borda de inserção 3D. O efeito depende do valor da cor da borda
+                <p><b>outset</b> - Define uma borda inicial 3D. O efeito depende do valor da cor da borda
+                <p><b>none</b> - Não define borda
+                <p><b>hidden</b> - Define uma borda oculta
+                <p>A propriedade border-style pode ter de um a quatro valores (para a borda superior, borda direita, 
+                    borda inferior e borda esquerda).</p>
+                                    
+            <div> <!-- INÍCIO DO BLOCO DE EXEMPLO-->
+                <pre>
+                    <p id = "code">EXEMPLO:</p>
+                    <p> 
+                        &lt;style>
+                            p.dotted {border-style: dotted;}
+                            p.dashed {border-style: dashed;}
+                            p.solid {border-style: solid;}
+                            p.double {border-style: double;}
+                            p.groove {border-style: groove;}
+                            p.ridge {border-style: ridge;}
+                            p.inset {border-style: inset;}
+                            p.outset {border-style: outset;}
+                            p.none {border-style: none;}
+                            p.hidden {border-style: hidden;}
+                            p.mix {border-style: dotted dashed solid double;}
+                        &lt;/style> 
+                    </p>
+                </pre>
+            </div> <!-- FIM DO BLOCO DE EXEMPLO -->
+            <br>
+            <h3 id="8">Margens</h2>
+
+            <p>As margin properties CSS são usadas para criar espaço ao redor dos elementos, 
+                fora de qualquer borda definida.</p>
+            <p>O CSS tem propriedades para especificar a margem para cada lado de um elemento:</p>
+            <p> <b>margin-top</b></p>
+            <p> <b>margin-right</b></p>
+            <p> <b>margin-bottom</b></p>
+            <p> <b>margin-left</b></p>
+
+            <p>Todas as propriedades de margem podem ter os seguintes valores:</p>
+            <p><b>auto</b> - o navegador calcula a margem</p>
+            <p><b>comprimento</b> - especifica uma margem em px, pt, cm, etc.</p>
+            <p><b>%</b> - especifica uma margem em % da largura do containing element</p>
+            <p><b>herdar</b> - especifica que a margem deve ser herdada do elemento pai</p>
+                                        
+            <div> <!-- INÍCIO DO BLOCO DE EXEMPLO-->
+                <pre>
+                    <p id = "code">EXEMPLO:</p>
+                    <p>
+                      p {
+                        margin-top: 100px;
+                        margin-bottom: 100px;
+                        margin-right: 150px;
+                        margin-left: 80px;
+                      }
+                    </p>
+                </pre>
+            </div> <!-- FIM DO BLOCO DE EXEMPLO -->
+            <br>
+            <h3 id="9">Padding, heigth e width</h2>
+
+            <p>O preenchimento é usado para criar espaço ao redor do conteúdo de um 
+                elemento, dentro de qualquer borda definida. Existem propriedades para definir o preenchimento de 
+                cada lado de um elemento (superior, direito, inferior e esquerdo). E o CSS height e width são 
+                propriedades usadas ​​para definir a altura e a largura de um elemento.</p>      
+            <p>As propriedades de altura e largura não incluem preenchimento, bordas ou margens. 
+                Ele define a altura/largura da área dentro do preenchimento, borda e margem do elemento.</p>   
+            <p>As propriedades height e width podem ter os seguintes valores: </p>
+
+            <p><b>auto</b> - Este é o padrão. O navegador calcula a altura e a largura</p>
+            <p><b>length</b> - Define a altura/largura em px, cm, etc.</p>
+            <p><b>%</b> - Define a altura/largura em porcentagem do bloco que o contém </p>
+            <p><b>initial</b> - Define a altura/largura para seu valor padrão</p>
+            <p><b>inherit</b> - A altura/largura será herdada de seu valor pai</p>                               
+                                            
+            <div> <!-- INÍCIO DO BLOCO DE EXEMPLO-->
+                <pre>
+                    <p id = "code">EXEMPLO:</p>
+                    <p> Padding: </p>
+                        <p>
+                            div {
+                            padding-top: 50px;
+                            padding-right: 30px;
+                            padding-bottom: 50px;
+                            padding-left: 80px;
+                            }
+                        </p>
+                    <p>Heigth e width:</p>
+                        <p>
+                            div {
+                                height: 200px;
+                                width: 50%;
+                            }
+                        </p>
+                </pre>
+            </div> <!-- FIM DO BLOCO DE EXEMPLO -->
+            <br>
+            <h3 id="10">Box Model</h2>
+
+            <p>Em CSS, o termo "box model" é usado quando se fala em design e layout. O box model CSS é 
+                essencialmente uma caixa que envolve cada elemento HTML. Consiste em: margens, bordas, preenchimento 
+                e o conteúdo real.</p>
+            <p>Diferentes partes:</p>
+
+            <p><b>Content</b> - O conteúdo da caixa, onde aparecem texto e imagens</p>
+            <p><b>Padding</b> - Limpa uma área ao redor do conteúdo. O enchimento é transparente</p>
+            <p><b>Border</b> - Uma borda que contorna o preenchimento e o conteúdo</p>
+            <p><b>Margin</b> - Limpa uma área fora da borda. A margem é transparente</p>
+            <p>O modelo de caixa nos permite adicionar uma borda ao redor dos elementos e definir o espaço entre os 
+                elementos. </p>
+                                                
+            <div> <!-- INÍCIO DO BLOCO DE EXEMPLO-->
+                <pre>
+                    <p id = "code">EXEMPLO:</p>
+                    <p>exemplo de um códido qualquer em css
+                                                
+                                                
+                                                p {
+                                                    color: black;
+                                                    padding: 30px;
+                                                    margin: 10px;
+                                                }
+                    </p>
+                </pre>
+            </div> <!-- FIM DO BLOCO DE EXEMPLO -->
+            <br>
+            <h3 id="11">Fontes</h2>
+
+            <p>Em CSS, usamos a propriedade <b>font-family</b> para especificar a fonte de um texto.</p>
+            <p>A propriedade <b>font-style</b> é usada para especificar texto.</p>
+            <p>Esta propriedade tem três valores:</p>
+            <p><b>normal</b> - O texto é mostrado normalmente</p> 
+            <p><b>italic</b> - O texto é mostrado em itálico</p>
+            <p><b>oblique</b> - O texto está "inclinado"</p>
+            <p>A propriedade <b>font-size</b> define o tamanho do texto.</p>
+            <p>Você também pode importar uma fonte do Google, basta adicionar o link na seção head e depois consultar
+                a fonte no CSS.
+            </p>
+                                                    
+            <div> <!-- INÍCIO DO BLOCO DE EXEMPLO-->
+                <pre>
+                    <p id = "code">EXEMPLO:</p>
+                    <p>font-family:</p>
+                        <p>
+                        .p1 {
+                            font-family: "Times New Roman", Times, serif;
+                        }
+                        </p>
+                    <p>font-style e font-size:</p>
+                        <p>
+                            h1 {
+                                font-style: oblique;
+                                font-size: 40px;
+                              }
+                        </p>
+                    <p>Fonte importada:</p>
+                        <p>
+                            &lt;head>
+                            &lt;link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+                                &lt;style>
+                                    body {
+                                    font-family: "Sofia", sans-serif;
+                                    }
+                                &lt;/style>
+                             &lt;/head>
+                        </p>
+                </pre>
+            </div> <!-- FIM DO BLOCO DE EXEMPLO -->                                    
 
         </main> <!-- FIM DO CONTEÚDO PRINCIPAL -->
 
-        <div id="sidebar"> sidebar </div> <!-- CRIAÇÃO DO MENU LARERAL -->
+        <div id="sidebar"> 
+            <ul> <!--SUMÁRIO-->
+                <li><h2>Sumário</h2></li>
+                <li><a href="#1">CSS - Introdução</a></li>
+                <li><a href="#2">CSS História</a></li>
+                <li><a href="#3">CSS Sintaxe</a></li>
+                <li><a href="#4">CSS Como adicioná-lo</a></li>
+                <li><a href="#5">CSS Comentários</a></li>
+                <li><a href="#6">CSS Cores</a></li>
+                <li><a href="#7">CSS Bordas</a></li>
+                <li><a href="#8">CSS Margens</a></li>
+                <li><a href="#9">CSS Padding, heigth  width</a></li>
+                <li><a href="#10">CSS Box Model</a></li>
+                <li><a href="#11">CSS Fontes</a></li>
+            </ul>
+        </div> 
 
         <footer>
             <table>
