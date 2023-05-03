@@ -54,8 +54,24 @@ nav#menu ul li a:first-child {
     border-radius: 8px 8px 0px 0px;
 }
 
+.container-index > #content2{
+    /* CENTRALIZA O BOX EXEMPLO */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 .container-index > #content4 {
     border-end-start-radius: 8px;
+}
+
+.container-index > #content5 {
+    /* CENTRALIZA O BOX EXEMPLO */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .container-index > #content6 {
@@ -74,9 +90,9 @@ nav#menu ul li a:first-child {
     /* O QUE É HTML */
     background-color:#0009D6;
     grid-area: content1;
-    padding: 40px 80px 40px 80px;
+    padding: 30px 100px 70px 100px;
     text-justify: center;
-
+    
 }
 
 #content2 {
@@ -91,8 +107,11 @@ nav#menu ul li a:first-child {
     /* BOTÃO APRENDA HTML */
     background-color:#0009D6;
     grid-area: content3;
-    justify-content:end;
     padding: 20px 40px 20px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -100,7 +119,7 @@ nav#menu ul li a:first-child {
     /* O QUE É CSS */
     background-color: white;
     grid-area: content4;
-    padding: 40px 80px 40px 80px;
+    padding: 30px 100px 70px 100px;
     text-justify: center;
 }
 
@@ -117,6 +136,10 @@ nav#menu ul li a:first-child {
     background-color: white;
     grid-area: content6;
     padding: 20px 40px 20px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 
 }
 
@@ -128,14 +151,14 @@ nav#menu ul li a:first-child {
     grid-template-areas: 
     "nav nav nav nav"
     "sidebar main main main"
-    "footer footer footer footer";
+    "sidebar footer footer footer";
 
     grid-gap: 0.6rem;
     margin: 0px 20px 0px 20px;
 }
 
 .container-conteudo > main {
-    border-radius: 8px;
+    border-radius: 0px 8px 8px 0px;
 }
 
 main, #sidebar, footer {
@@ -159,12 +182,20 @@ main {
 }
 
 #sidebar {
-    background-color: darkgray;
-    grid-area: sidebar;
+    grid-area: sidebar;    
+    background-color: #D9D9D9;
+    border-radius: 8px;
+    height:100vh;
+    overflow-y:scroll;
+    position: sticky;
+    top: 0.3%;
+    left: 0%;
+
 }
 
 footer {
     background-color: #0009D6;
     border-radius: 8px;
+    padding: 10px;
     grid-area: footer;
 }
