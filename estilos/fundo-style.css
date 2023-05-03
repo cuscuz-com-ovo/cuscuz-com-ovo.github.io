@@ -144,6 +144,7 @@ nav#menu ul li a:first-child {
     grid-template-areas: 
     "nav nav nav nav"
     "sidebar main main main"
+    "main main main main"
     "footer footer footer footer";
 
     grid-gap: 0.6rem;

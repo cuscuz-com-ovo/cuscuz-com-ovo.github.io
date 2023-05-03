@@ -26,6 +26,17 @@ table > tr > th> a:hover {
     color:#FFD223;
 }
 
+ul {
+    list-style: none;
+    padding-left: none;
+}
+
+ul > li {
+    list-style-type: none;
+    border-right: none;
+    padding: 15px 0px 15px 0px;
+}
+
 h1 {
     /* TITULO DE PAGINAS OU TOPICOS */
     font-family: 'Barlow Condensed', sans-serif;
