@@ -25,7 +25,7 @@
         </nav> <!-- FIM DA BARRA DE NAVEGAÇÃO -->
 
         <main>
-            <h1 id="12">HTML</h1>
+            <h1 id="12">HTML - Introdução</h1>
             <p>Aqui é o espaço destinado aos parágrafo, onde terá o conteúdo de html, explicando o que é, contando a sua história... etc</p>
 
             <h3>Subtópico HTML</h3>
@@ -35,7 +35,7 @@
             <div> <!-- INÍCIO DO BLOCO DE EXEMPLO-->
                 <pre>
                 <p id = "exemplo">EXEMPLO:</p>
-<p id = "code">exemplo de um códido qualquer em html
+<p id = "code">Exemplo de um código html
     
 &lt;!DOCTYPE html>
 &lt;html> 
@@ -50,6 +50,401 @@ Minha página em HTML!
 </p>
 </pre>
             </div> <!-- FIM DO BLOCO DE EXEMPLO -->
+            
+            <h1 id="">HTML - Introdução</h1>
+            <p>Aqui é o espaço destinado aos parágrafo, onde terá o conteúdo de html, explicando o que é, contando a sua história... etc</p>
+
+            <h3>Subtópico HTML</h3>
+
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti obcaecati nemo inventore debitis architecto, voluptatem dolorem, veniam deserunt quae, praesentium incidunt reprehenderit ea quaerat explicabo repellendus vero. Numquam, natus aliquam.</P>
+
+            <h1 id="13">Editor de HTML</h1>
+            <p>Para você criar um código em HTML, basta ter um editor de texto simples. Tá vendo como é fácil?</p>
+            <p>Para criar páginas da Web, você precisa usar editores profissionais. Mas, use um editor simples de início para aprender. </p>
+
+            <h3>Alguns editores</h3>
+
+            
+                <ul>
+                    <li><strong>- Bloco de Notas do seu PC</strong></li>
+                    <li><strong>- Virtual Studio Code</strong></li>
+                    <li><strong>- Atom</strong></li>
+                    <li><strong>- Notepadd++</strong></li>
+                    <li><strong>- Sublime Text</strong></li>
+                </ul>
+            
+            
+            <h1 id="16">Atributos em HTML</h1>
+            <p>
+                Dentro do HTML, existem atributos que ajudam a controlar o comportamento do elemento. São palavras especiais dentro da tag de abertura que modificam um tipo de elemento. 
+            </p>
+            <p>Todos os elementos podem ter atributos, onde estes contribuem com informações adicionais sobre os elementos. São sempre especificados na tag de início e geralmente vêm de pares de nome como: <strong>name="value"</strong></p>
+
+            <h3>Atributo HREF</h3>
+            <p>Nesta tag, podemos atribuir uma URL de uma página que é definida pela tag &lt;a>. </p>
+
+            <div> <!-- BLOCO DE EXEMPLO-->
+                <pre>
+                <p id = "exemplo">EXEMPLO:</p>
+<p id = "code">Adição de URL à tag &lt;a>
+    
+&lt;a> href="https://www.github.com">Github&lt;/a>
+</p>
+                </pre>  
+            </div>
+
+            <h3>Atributo SRC</h3>
+            <p>Este atributo é usado para adicionar uma imagem na página, por meio da tag &lt;img>.</p>
+            <p>
+                SRC significa "source" <i>(fonte)</i>. Logo, o valor que o atributo vai incorporar será a URL da imagem que você adicionou. Ela aponta para o local onde a imagem está armazenada. 
+            </p> 
+
+            <div> <!--  BLOCO DE EXEMPLO-->
+                <pre>
+                <p id = "exemplo">EXEMPLO:</p>
+<p id = "code">Adição de imagem na tag &lt;img>
+
+&lt;img> src="cuscuz-com-ovo.png">
+</p>
+                </pre>
+    
+             <p>Existem duas maneiras de especificar a URL usando &lt;src>:
+                <br>
+              <ol>
+                <li><strong>URL Absoluta:</strong> Aqui você você adiciona URL de uma imagem de outro site</li>
+                <div> <!--  BLOCO DE EXEMPLO-->
+                    <pre>
+                    <p id = "exemplo">EXEMPLO:</p>
+    <p id = "code">&lt;src="https://www.github.com/images/cuscuz-com-ovo.png">
+    </p>
+                    </pre>  
+                </div>
+                <li><strong>URL Relativo:</strong>Imagem hospedada no site, mas a URL não tem o nome do domínio. Se não tiver barra, será relativa à página atual.</li>
+                    <div> <!--  BLOCO DE EXEMPLO-->
+                        <pre>
+                        <p id = "exemplo">EXEMPLO:</p>
+        <p id = "code">&lt;src="img_girl.jpg">
+        </p>
+                        </pre> 
+                <p>Com barra, será relativa ao domínio. E é muito bom usar dessa forma, pois não quebra a URL, caso você mude de domínio.</p>
+                <div> <!--  BLOCO DE EXEMPLO-->
+                    <pre>
+                    <p id = "exemplo">EXEMPLO:</p>
+    <p id = "code">&lt;src="/images/img_girl.jpg">
+    </p>
+                    </pre> 
+                    </div>
+              </ol>  
+            </p>
+            </div>
+
+            <h3>Atributos WIDTH e HEIGHT</h3>
+            <p>Estes atributos servem para configurar a imagem da tag &lt;img>, especificando largura e altura da imagem, respectivamente. E, adicionando os pixels (tamanho que executa na tela).</p>
+
+            <div> <!--  BLOCO DE EXEMPLO-->
+                <pre>
+                <p id = "exemplo">EXEMPLO:</p>
+<p id = "code">Configurando tamanho da imagem
+
+&lt;img src="cuscuz-com-ovo.png" width="500" height="600">
+</p>
+                </pre>  
+            </div>
+
+            <h3>Atributo ALT</h3>
+            <p>Este atributo obrigatório para a tag &lt;img> especifica um texto alternativo para uma imagem, caso ela não possa ser exibida por alguma razão.</p>
+
+            <div> <!--  BLOCO DE EXEMPLO-->
+                <pre>
+                <p id = "exemplo">EXEMPLO:</p>
+<p id = "code">Adicionando alt
+&lt;img src="cuscuz-com-ovo.png" alt="Comendo um cuscuzinho com ovo">
+</p>
+                </pre>  
+            </div>
+            <p>Caso a imagem não exista, ou a URL esteja errada, irá aparecer o que está dentro do atributo.</p>
+            <p id = "exemplo">Exemplo:</p>
+<p id = "code">
+
+<img src ="cuscuz-com-ovo.jpg" alt = "Comendo aquele cuscuz com uma manteiguinha">
+</p>
+<br>
+      
+            <h3>Atributo STYLE</h3>
+            <p>Usado para implementar estilos aos elementos: cor, fonte e vários outro.</p>
+            <div> <!--  BLOCO DE EXEMPLO-->
+                <pre>
+                <p id = "exemplo">EXEMPLO:</p>
+<p id = "code">Adição de parágrafo
+&lt;style="color:rosa;">Parágrafo rosa</p>
+</p>
+                </pre>  
+            </div>
+
+            <h3>Atributo LANG</h3>
+            <p>Precisa atribuir o lang dentro do &lt;html>, para declarar o idioma da página. Veja um exemplo que especifica o idioma como português do Brasil:</p>
+
+            <div> <!--  BLOCO DE EXEMPLO-->
+                <pre>
+                <p id = "exemplo">EXEMPLO:</p>
+<p id = "code">idioma português do Brasil 
+    &lt;!DOCTYPE html>
+    &lt;html lang="pt-br">
+    &lt;body>
+    ...
+    &lt;/body>
+    &lt;/html>
+</p>
+                </pre>  
+            </div>
+
+            <h3>Atributo do TÍTULO</h3>
+            <p>Ajuda a definir informações extras sobre um elemento. Ele exibe uma mensagem acima do texto assim que você passa o mouse sobre o elemento.</p>
+
+            <div> <!--  BLOCO DE EXEMPLO-->
+                <pre>
+                <p id = "exemplo">EXEMPLO:</p>
+<p id = "code">Adição do title
+    &lt; p title="Melhor ainda com um ovinho frito">Cuscuz é maravilhoso!&lt;/p>
+<p title="Melhor ainda com um ovinho frito">Cuscuz é maravilhoso!</p>
+</p>
+                </pre>  
+            </div>
+
+            <h1 id="20">Formatação HTML</h1>
+            <p>Há várias formas de formatar o texto HTML. Existem os elementos de formatação,, exibibindo tipos especiais de texto:</p>
+            <ul>
+                <li><b>Texto em negrito</b></li>
+                <li><strong>Texto importante</strong></li>
+                <li><em>Texto enfatizado</em></li>
+                <li><mark>Texto marcado</mark></li>
+                <li><small>Texto pequeno</small></li>
+                <li><del>Texto deletado</del></li>
+                <li><ins>Texto inserido</ins></li>
+                <li><sub>Texto subscrito</sub></li>
+                <li><sup>Texto sobrescrito</sup></li>
+            </ul>
+            <ul>
+                <li>O &lt;b> e o &lt;strong> são usados para deixar o texto em negrito, mas apenas o &lt;strong> deixa o texto importante. </li>
+            </ul>
+
+            <h1 id="21">Citações</h1>
+            <p>As citações são vistas em HTML para fazer referências ou citações a outros conteúdos de outras páginas, por exemplo. com outras peculiaridades, ajudando a manter uma boa semântica e eficiente para o HTML5.</p>
+            <p>Os elementos de citação são:
+                <ol>
+                    <li><strong>&lt;bloquote></strong></li>
+                    <li><strong>&lt;q></strong></li>
+                    <li><strong>&lt;abbr></strong></li>
+                    <li><strong>&lt;address></strong></li>
+                    <li><strong>&lt;cite></strong></li>
+                    <li><strong>&lt;bdo></strong></li>
+                </ol>
+            </p>
+                <h3>&lt;bloquote></h3>
+                <p>Elemento usado para definir uma seção citada de uma fonte distinta à página Web.</p>
+                <div> <!--  BLOCO DE EXEMPLO-->
+                <pre>
+                    <p id = "exemplo">EXEMPLO:</p>
+    <p id = "code">Bloquote
+        &lt;p> Texto do site que introduz as vantagens de se comer cuscuz&lt;p>
+        &lt;bloquote> cite="http://www.cuscusbest.com/index.html">
+        ...
+        &lt;/bloquote>
+    </p>
+                </pre>  
+                </div>
+                <h3>&lt;q></h3>
+                <p></p>
+                <p>Elemento usado para criar citações curtas.</p>
+
+                <div> <!--  BLOCO DE EXEMPLO-->
+                <pre>
+                    <p id = "exemplo">EXEMPLO:</p>
+    <p id = "code">Citação curta
+        &lt;p>Comer cuscuz faz bem, pois como todo baiano diz &lt;q>cuscuz é vida!
+        &lt;/q>&lt;/p>
+        
+    </p>
+                </pre>  
+                </div>
+
+                <h3>&lt;abbr></h3>
+                <p></p>
+                <p>Esta tag especifica uma abreviação, como "CSS", "Sr.", "BR".</p>
+                <p>Caso você coloque uma abreviação de título global, ao passar o mouse sobre o elemento, exibe uma caixa de mensagem com a descrição da abreviação.</p>
+
+                <div> <!--  BLOCO DE EXEMPLO-->
+                <pre>
+                <p id = "exemplo">EXEMPLO:</p>
+    <p id = "code">Abreviação 
+        &lt;p> A &lt;abbr title="Associação dos Amantes de Cuscuz">ACC&lt;/abbr> foi criada na Bahia, em 1903. &lt;/p> <i>rs</i>
+    </p>
+                </pre> 
+                </div> 
+
+                <h3>&lt;address></h3>
+                <p></p>
+                <p>Esta tag especifica os dados do contato do autor ou dono de um documento como e-mail, endereço local, telefone, entre outros.</p>
+
+                <div> <!--  BLOCO DE EXEMPLO-->
+                <pre>
+                    <p id = "exemplo">EXEMPLO:</p>
+    <p id = "code">Endereço
+    &lt;address>
+    Escrito por Gean Martins
+    Entre no meu site: 
+    Gean.com 
+    BR
+    &lt;address>
+    </p>
+                </pre>
+                </div>
+
+                    <h3>&lt;cite></h3>
+                <p></p>
+                <p>Usa-se essa tag para criar títulos de um documento criativo como música, livro, etc.</p>
+                <div> <!--  BLOCO DE EXEMPLO-->
+                <pre>
+    <p id = "code">Título criativo
+
+    &lt;p>&lt;cite> Crime e Castigo&lt;/cite>, por Dostoiévski.&lt;/p>
+    </p>
+    
+                </pre>
+                </div>
+
+                    <h3>&lt;bdo></h3>
+                <p></p>
+                <p>O <i>Bi-Directional Override</i> é uma tag usada para substituir a direção de um texto.</p>
+                <div> <!--  BLOCO DE EXEMPLO-->
+                    <pre>
+        <p id = "code">Substituição da direção do texto
+        &lt;bdo> dir = "rtl"> O cuscuz é feito com milho e muito amor &lt;/bdo></p>
+                </pre>
+                </div>
+
+                <h1 id = "23">Links HTML</h1>
+                <p>
+                    Os links ajudam o usuário a encontrar páginas externas à página web atual. Em HTML, são chamados <strong>Hiperlinks</strong>.
+                    <p>
+                    Você pode adicionar o hiperlink em texto, imagens ou qualquer outro elemento HTML.
+                </p>
+                <p>Cria-se dentro da tag &lt;a>.</p> 
+                </p>
+
+                <div> <!--  BLOCO DE EXEMPLO-->
+                    <pre>
+        <p id = "code">Hiperlink
+    
+        &lt;a href ="url"> Link do cuscuzbest &lt;/a>
+        </p>
+                    </pre>
+                <p>
+                    Para a criação de URL's absolutos ou relativos, veja o tópico <li><a href = "#16"> Atributos em HTML</a></li>.
+                <p>
+                    Para criar links em imagens, adicione a tag &lt;img>:
+                    <div> <!--  BLOCO DE EXEMPLO-->
+                        <pre>
+        <p id = "code">Hiperlink em imagem (GIF)
+        
+        &lt;a href ="default.jpeg"> 
+        &lt;img src = "cuscuz.gif" alt = "Cuscuz saindo do fogo" style = "widht:30px;height:30px;"> 
+        &lt;/a>
+        </p>
+                    </pre>
+                    </p>      
+                    </div>
+
+                    <h1 id = "25">Icon em HTML</h1>
+                    <p>O Icon ou favicon é uma imagem pequena ao lado do título da página no browser. Para adicionar uma favicon, você precisa usar uma imagem pequena, já que o título tem um espaço muito pequeno.</p>
+                    <p> Ela é exibida do lado do título.</p>
+                    <p><img src="images/favicon-cuscuz.png" alt ="" style ="width:40%;height:40%;"></p>
+
+                    <p>Para adicionar a favicon, implemente um &lt;link> ao seu arquivo "index.html" depois do &lt;title>:</p>
+
+                    <div> <!--  BLOCO DE EXEMPLO-->
+                        <pre>
+        <p id = "code">Adicionando icon à página
+        
+        &lt;!DOCTYPE html>
+        &lt;html>
+        &lt;head>
+            &lt;title> Aprecie o Cuscuz &lt;/title>
+            &lt;link rel="icon" type="image/x-icon" href="/images/favicon-cuscuz.png">
+        &lt;/head>
+        &lt;body>
+        &lt;h1> CUSCUZ QUENTINHO &lt;/h1>
+        &lt;p> Tem coisa melhor que cuscuz? Não teeem. &lt;/p>
+        &lt;/body>
+        &lt;/html>
+        </p>
+                    </pre>
+                    </p>      
+                    </div>
+
+                    <p>Salve o arquivo "index.html", atualize sua página no seu browser (tente F5). Você verá o icon ao lado do título da página.</p>
+
+                    <h1 id = "29"> Classes HTML</h1>
+                    <p>Este atributo é usado para determinar uma classe num elemento HTML. E inúmeros elementos podem compartilhar a mesma classe.</p>
+                    <p>A tag &lt;class> geralmente é usada para indicar um nome de classe numa folha de estilo.</p>
+                    <p>No exemplo abaixo, veja que têm três &lt;div> com uma classe "ingredientes". Todos estarão com o estilo .ingredients, dentro do &lt;head>.
+
+                    </p>
+
+                    <div> <!--  BLOCO DE EXEMPLO-->
+                        <pre>
+        <p id = "code"> Adicionando classe
+            
+        &lt;!DOCTYPE html>
+        &lt;html>
+        &lt;head>
+        &lt;style>
+        .ingredients {
+            background-color: yellow;
+            color: white;
+            border: 2px solid black;
+            margin: 20px;
+            padding: 20px;
+        }
+        &lt;/style>
+        &lt;/head>
+        &lt;body>
+
+        &lt;div class="ingredientes">
+        &lt;h2> Farinha de Milho &lt;/h2>
+        &lt;p> A farinha de milho é o principal ingerdiente do cuscuz&lt;/p>
+        &lt;/div>
+
+        &lt;div class="ingredientes">
+        &lt;h2> Sal ou Açúcar &lt;/h2>
+        &lt;p>Adiciona sal ou açúcar à farinha&lt;/p>
+        &lt;/div>
+
+        &lt;div class="ingredientes">
+        &lt;h2> Água &lt;/h2>
+        &lt;p> Adicione água em tudo e mexa bem&lt;/p>
+        &lt;/div>
+
+        &lt;/body>
+        &lt;/html>
+        </p>
+                    </pre>
+                    </p>      
+                    </div>
+
+                    <h3>Várias classes</h3>
+                    <p>Pode haver um elemento com mais de uma classe. Separam-se o nome das classes, como no exemplo:</p>
+
+                    <div> <!--  BLOCO DE EXEMPLO-->
+                        <pre>
+        <p id = "code"> Adicionando várias classes
+
+                    &lt;h2 class="city main">Farinha de Milho&lt;/h2>
+                    &lt;h2 class="city">Açúcar ou Sal&lt;/h2>
+                    &lt;h2 class="city">Água&lt;/h2>
+        </p>
+                        </pre>
+                    </div>
 
         </main>
 
@@ -65,40 +460,19 @@ Minha página em HTML!
                 <li><a href="#17">Cabeçalhos HTML</a></li>
                 <li><a href="#18">Parágrafos HTML</a></li>
                 <li><a href="#19">Estilos HTML</a></li>
-                <li><a href="#19">Formatação HTML</a></li>
-                <li><a href="#19">Citações HTML</a></li>
-                <li><a href="#19">Comentários HTML</a></li>
-                <li><a href="#20">Cores HTML</a></li>
-                <li><a href="#21">Links HTML</a></li>
-                <li><a href="#22">Imagens HTML</a></li>
-                <li><a href="#23">Icon em HTML</a></li>
-                <li><a href="#24">Tabelas em HTML</a></li>
-                <li><a href="#25">Listas em HTML</a></li>
-                <li><a href="#26">Bloco de HTML</a></li>
-                <li><a href="#27">Classes HTML</a></li>
+                <li><a href="#20">Formatação HTML</a></li>
+                <li><a href="#21">Citações HTML</a></li>
+                <li><a href="#22">Comentários HTML</a></li>
+                <li><a href="#23">Links HTML</a></li>
+                <li><a href="#24">Imagens HTML</a></li>
+                <li><a href="#25">Icon em HTML</a></li>
+                <li><a href="#26">Tabelas em HTML</a></li>
+                <li><a href="#27">Listas em HTML</a></li>
+                <li><a href="#28">Bloco de HTML</a></li>
+                <li><a href="#29">Classes HTML</a></li>
             </ul>
-            
+  
         </div>
-        
-        <footer>
-            <table>
-                <tr>
-                    <th>
-                        <a href="https://github.com/cuscuz-com-ovo" target="_blank"><img src="images/logotipo-github.png" alt=""></a>
-                    </th>
-                    <th>
-                        <a href="https://github.com/cuscuz-com-ovo" target="_blank"> Acesse nossa conta no GITHUB</a> <br>                
-                    </th>
-                    <th>
-                        <img src="images/logo-menu-sem-fundo.png" alt="">
-                    </th>
-                    <th>
-                        <a  href="sobre.html"> Sobre a página</a>
-                    </th>
-                </tr>
-            </table>
-            <center><p style = "font-family: 'Courier New', Courier, monospace; color:white; font-size: small;">Copyright &copy; 2023 - by Cuscuz com ovo</p></center>
-        </footer> <!-- NOTAS DE RODAPÉ -->
         
         <footer>
 
@@ -118,7 +492,7 @@ Minha página em HTML!
                     </th>
                 </tr>
             </table>
-            <center><p style = "font-family: 'Courier New', Courier, monospace; color:aliceblue; font-size: small;">Copyright &copy; 2023 - by Cuscuz com ovo</p></center>
+            <center><p style = "font-family: 'Courier New', Courier, monospace; color:white; font-size: small;">Copyright &copy; 2023 - by Cuscuz com ovo</p></center>
         </footer>
 
     </div>
