@@ -144,9 +144,12 @@ pre {
     width:300px;
     height:300px;
     border-radius: 10px;
+    display: flex;
+    align-items:center;
+
 }
 
 h2{
     font-family: 'Barlow Condensed', sans-serif;
-    font-size: 4vw;
+    font-size: 3vw;
 }
