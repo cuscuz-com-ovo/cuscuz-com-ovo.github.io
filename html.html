@@ -25,32 +25,455 @@
         </nav> <!-- FIM DA BARRA DE NAVEGAÇÃO -->
 
         <main>
-            <h1>HTML</h1>
-            <p>Aqui é o espaço destinado aos parágrafo, onde terá o conteúdo de html, explicando o que é, contando a sua história... etc</p>
-
-                O próprio documento HTML começa com &lt;html>e termina com  &lt;/html>.
-                
-                A parte visível do documento HTML está entre &lt;body>e &lt;/body>.</P>
-
+            <h1 id = "12"> HTML - Introdução</h1>
+            <p>Criada pelo britânico Tim Berners-Lee, o acrônimo HTML significa HiperText Markup Language, traduzindo ao português: Linguagem de Marcação de Hipertexto.  O HTML é o componente básico da web, ele permite inserir o conteúdo e estabelecer a estrutura básica de um website. Portanto, ele serve para dar significado e organizar as informações de uma página na web. Sem isso, o navegador não saberia exibir textos como elementos ou carregar imagens e outros conteúdos.</p>
+            <p>Os hipertextos são conjuntos de elementos conectados. Esses podem ser palavras, imagens, vídeos, documento, etc. Quando conectados, formam uma rede de informações que permite a comunicação de dados, organizando conhecimentos e guardando informações.</p>
+            <p>Ao visitar uma página simples na web, você pode perceber que existem diferentes distribuições e tamanhos para títulos, parágrafos, imagens, vídeos e qualquer outro elemento. Essa estrutura é estabelecida através do HTML. No inicio da web, era comum encontrar sites apenas contendo textos e imagens simples, com estrutura básica e sem estilizações. Porém, nos dias atuais, muito dificilmente você encontrará sites que possuam apenas elementos HTML. Portanto, podemos considerar o HTML o “esqueleto” da sua página.
+             Imagine então que além do esqueleto, é necessário ter o corpo. Para isso, temos então as linguagens CSS e o JavaScript, que em conjunto com HTML, formam a base para todos os websites atuais. Veremos mais à frente o que significam essas linguagens.</p>
+            <img src="images/Tim.jpg" alt="">
+            <br>
+            <br>
+            <h3>Exemplos básicos em HTML</h3>
+                <p>O próprio documento HTML começa com &lt;html>e termina com  &lt;/html>.</p>
+                <p>A parte visível do documento HTML está entre &lt;body>e &lt;/body>.</P>
+                  
             <div> <!-- INÍCIO DO BLOCO DE EXEMPLO-->
                 <pre>
                 <p id = "code">EXEMPLO:</p>
-<p>exemplo de um códido qualquer em html
+<p>&lt;!DOCTYPE html>
+    &lt;html>
+    &lt;body>
     
-&lt;!DOCTYPE html>
-&lt;html> 
-&lt;!-- This is the sintax of a comment -
-&lt;head>
-&lt;title> Títuto da minha página&lt;/title> 
-&lt;/head> 
-&lt;body> 
-Minha página em HTML!
-&lt;/body> 
-&lt;/html>
+    &lt;h1>My First Heading&lt;/h1>
+    &lt;p>My first paragraph&lt;/p>
+    
+    &lt;/body>
+    &lt;/html>
+</p>
 
+</pre>
+<h3>A declaração Doctype</h3>
+<p>A Declaração &lt;!DOCTYPE>
+    A &lt;!DOCTYPE>declaração representa o tipo de documento e ajuda os navegadores a exibir páginas da Web corretamente.
+    
+    Ele deve aparecer apenas uma vez, no topo da página (antes de qualquer tag HTML).
+    
+    A &lt;!DOCTYPE>declaração não diferencia maiúsculas de minúsculas.
+    </p>
+    <pre>
+        <p id = "code">EXEMPLO:</p>
+<p>&lt;!DOCTYPE html>
+</p>
+
+</pre>
+<h1 id = "15"> Elementos HTML </h1>
+<p> Dentro do html existem alguns elementos que são utilizados com o intuito de melhor organizar o código que será construido.</p>
+<p>Os elementos são: html, body, h1 e p. Todos eles serão explicados de forma detalhada logo abaixo.</p>
+<p> Os elementos HTML podem ser aninhados (isso significa que os elementos podem conter outros elementos).
+    <h3>Elemento Html</h3>
+    <p>Todos os documentos HTML consistem em elementos HTML aninhados.</p>
+    <p>O exemplo a seguir contém quatro elementos HTML ( , &lt;html>e ) :&lt;body>&lt;h1>&lt;p>&lt;/p>&lt;/p>
+        <pre>
+            <p id = "code">EXEMPLO:</p>
+<p>&lt;!DOCTYPE html>
+    &lt;html>
+        &lt;body>
+    
+            &lt;h1>My First Heading&lt;/h1>
+            &lt;p>My first paragraph.&lt;/p>
+    
+            &lt;/body>
+            &lt;/html>
+</p>
+
+</pre>  
+    <h3>Elemento Body</h3> 
+<p>O &lt;html>elemento é o elemento raiz e define todo o documento HTML.</p> 
+    <p>Ele tem uma tag inicial &lt;html>e uma tag final &lt;/html>.</p>
+    <p>Então, dentro do &lt;html>elemento existe um &lt;body> elemento:</p>
+    <pre>
+        <p id = "code">EXEMPLO:</p>
+<p>&lt;body>
+
+    &lt;h1>My First Heading&lt;/h1>
+    &lt;p>My first paragraph.&lt;/p>
+    
+    &lt;/body>
+</p>
+
+</pre>
+    <h3>Elemento H1 e P</h3>
+<p>O &lt;body>elemento define o corpo do documento.</p>
+   <p>Ele tem uma tag inicial &lt;body>e uma tag final &lt;/body>.</p> 
+    <p>Então, dentro do &lt;body>elemento existem dois outros elementos: &lt;h1>e &lt;p>:</p>
+    <pre>
+        <p id = "code">EXEMPLO:</p>
+<p>&lt;h1>My First Heading&lt;/h1>
+    &lt;p>My first paragraph.&lt;/p>
+</p>
+
+</pre>
+    <h3>Elemento H1</h3>
+<p>O &lt;h1>elemento define um cabeçalho.</p>
+   <p>Ele tem uma tag inicial &lt;h1>e uma tag final &lt;/h1>:</p>
+   <pre>
+    <p id = "code">EXEMPLO:</p>
+<p>&lt;h1>My First Heading&lt;/h1>
 </p>
 </pre>
-            </div> <!-- FIM DO BLOCO DE EXEMPLO -->
+    <h3>Elemento P</h3>
+<p>O &lt;p>elemento define um parágrafo.</p>
+    <p>Ele tem uma tag inicial &lt;p>e uma tag final &lt;/p>:</p>
+    <pre>
+        <p id = "code">EXEMPLO:</p>
+    <p>&lt;p>My first paragraph.&lt;/p>
+    </p>
+    </pre>
+    <h1id = "17"> Cabeçalho HTML</h1>
+    <p>Cabeçalhos HTML são títulos ou subtítulos que você deseja exibir em uma página da web.</p>
+    <p>Os cabeçalhos HTML são definidos com as tags &lt;h1>to &lt;h6>.
+        <p>&lt;h1>define o cabeçalho mais importante. &lt;h6>define o título menos importante.</p>
+    <pre>
+        <p id = "code">EXEMPLO:</p>
+    <p> <h1> &lt;h1> Heading 1 &lt;/h1> </h1>
+       <h2>&lt;h2> Heading 2 &lt;/h2> </h2>
+        <h3>&lt;h3> Heading 3 &lt;/h3> </h3>
+        <h4>&lt;h4> Heading 4 &lt;/h4> </h4>
+        <h5>&lt;h5> Heading 5 &lt;/h5> </h5>
+        <h6>&lt;h6> Heading 6 &lt;/h6> </h6>
+    </p>
+    </pre>
+    <p>Os navegadores adcionam um espaço em branco (uma margem) automaticamente como vocês podem ver na imagem acima.</p>
+        <h3>Títulos</h3>
+    <p>Os mecanismos de pesquisa usam os cabeçalhos para indexar a estrutura e o conteúdo de suas páginas da web.
+
+        Os usuários geralmente percorrem uma página por seus títulos. É importante usar cabeçalhos para mostrar a estrutura do documento.
+        
+        &lt;h1>os cabeçalhos devem ser usados ​para os cabeçalhos principais, seguidos pelos &lt;h2>cabeçalhos, depois os menos importantes &lt;h3>e assim por diante. </p>
+        <p>É interessante que você use a opção de cabeçalho quando realmente for construir um cabeçalho, e não apenas para tornar textos grandes e com margens maiores.</p>
+        <h3>Cabeçalhos grandes</h3>
+        <p>Cada título HTML tem um tamanho padrão. No entanto, você pode especificar o tamanho de qualquer cabeçalho com o style atributo, usando a font-size propriedade CSS:</p>
+        <pre>
+            <p id = "code">EXEMPLO:</p>
+        <p>&lt;h1 style="font-size:60px;">Heading 1&lt;/h1>
+        </p>
+        </pre>
+        <h1 id = "18"> Parágrafos</h1>
+        <p>O elemento HTML &lt;p>define um parágrafo.</p>
+        <p>Um parágrafo sempre começa em uma nova linha e os navegadores adicionam automaticamente algum espaço em branco (uma margem) antes e depois de um parágrafo.</p>
+        <pre>
+            <p id = "code">EXEMPLO:</p>
+        <p>&lt;p>This is a paragraph.&lt;/p></p>
+       <p> &lt;p>This is another paragraph.&lt;/p></p>
+        </p>
+        </pre>
+        <h3>Exibição HTML</h3>
+        <p>Você não pode ter certeza de como o HTML será exibido.</p>
+
+            <p>Telas grandes ou pequenas e janelas redimensionadas criarão resultados diferentes.</p>
+            <p>Com HTML, você não pode alterar a exibição adicionando espaços extras ou linhas extras em seu código HTML.</p>
+            <p>O navegador removerá automaticamente todos os espaços e linhas extras quando a página for exibida:</p>
+            <pre>
+                <p id = "code">EXEMPLO:</p>
+            <p>&lt;p>
+                This paragraph
+                contains a lot of lines
+                in the source code,
+                but the browser
+                ignores it.
+            &lt;/p>
+                
+            &lt;p>
+                This paragraph
+                contains         a lot of spaces
+                in the source         code,
+                but the        browser
+                ignores it.
+            &lt;/p>
+            </p>
+            </pre>
+        <h3>Regras Horizontais HTML</h3>
+                <p>A &lt;hr>tag define uma quebra temática em uma página HTML e geralmente é exibida como uma régua horizontal.</p>
+                <p>O &lt;hr>elemento é usado para separar o conteúdo (ou definir uma alteração) em uma página HTML:</p>
+                <pre>
+                    <p id = "code">EXEMPLO:</p>
+                <p>&lt;h1>This is heading 1&lt;/h1>
+                    &lt;p>This is some text.&lt;/p>
+                    &lt;hr>
+                    &lt;h2>This is heading 2&lt;/h2>
+                    &lt;p>This is some other text.&lt;/p>
+                    &lt;hr>
+                </p>
+                </pre>
+                <p>A &lt;hr>tag é uma tag vazia, o que significa que não tem tag final.</p>
+        <h3>Quebras de Linha HTML</h3>
+            <p>O elemento HTML &lt;br> define uma quebra de linha.</p>
+            <p>Use &lt;br> se quiser uma quebra de linha (uma nova linha) sem iniciar um novo parágrafo:</p>
+            <pre>
+            <p id = "code">EXEMPLO:</p>
+            <p>&lt;p> This is&lt;br> a paragraph&lt;br> with line breaks.</p>
+             </p>
+            </pre>
+             <p>A &lt;br>tag é uma tag vazia, o que significa que não tem tag final.</p>
+        <h3>Elemento &lt;pre> em HTML</h3>
+            <p>O elemento HTML &lt;pre> define o texto pré-formatado.</p>
+            <p>O texto dentro de um &lt;pre> elemento é exibido em uma fonte de largura fixa (geralmente Courier) e preserva espaços e quebras de linha:</p>
+        <pre>
+            <p id = "code">EXEMPLO:</p>
+        <p>&lt;pre>
+            My Bonnie lies over the ocean.
+          
+            My Bonnie lies over the sea.
+          
+            My Bonnie lies over the ocean.
+          
+            Oh, bring back my Bonnie to me.
+        &lt;/pre>
+        </p>
+        </pre>
+        <h1 id = "19"> Estilo HTML</h1>
+            <p>O atributo HTML styleé usado para adicionar estilos a um elemento, como cor, fonte, tamanho e muito mais.</p>
+            <h3>O atributo de estilo HTML</h3>
+             <p>A definição do estilo de um elemento HTML pode ser feita com o style atributo.</p>
+             <p>O atributo HTML style tem a seguinte sintaxe:</p>
+             <pre>
+                <p id = "code">EXEMPLO:</p>
+             <p>&lt;tagname style="property:value;">&lt;/tagname>
+             </p>
+                </pre>
+             <p>A propriedade é uma propriedade CSS. O valor é um valor CSS.</p>
+            <h3>Cor de fundo</h3>
+             <p>A propriedade CSS background-color define a cor de fundo de um elemento HTML.</p>
+             <pre>
+                <p id = "code">EXEMPLO:</p>
+             <p>Defina a cor de fundo de uma página como azul-claro:</p>
+
+               <p> &lt;body style="background-color:powderblue;">
+                
+                &lt;h1>This is a heading&lt;/h1>
+                &lt;p>This is a paragraph.&lt;/p>
+                
+                &lt;/body>
+
+                <p>Defina a cor de fundo para dois elementos diferentes:</p>
+
+                   <p> &lt;body>
+                    
+                    &lt;h1 style="background-color:powderblue;">This is a heading&lt;/h1>
+                    &lt;p style="background-color:tomato;">This is a paragraph.&lt;/p>
+                    
+                    &lt;/body>&lt;/p>
+             </p>
+    </pre>
+            <h3>Cor do Texto</h3>
+            <p>A propriedade CSS colordefine a cor do texto para um elemento HTML:</p>
+    <pre>
+                <p id = "code">EXEMPLO:</p>
+                <p>&lt;h1 style="color:blue;">This is a heading&lt;/h1>
+                    &lt;p style="color:red;">This is a paragraph.&lt;/p>
+                </p>
+    </pre>
+            <h3>Fontes</h3>
+                <p>A propriedade CSS font-family define a fonte a ser usada para um elemento HTML:</p>
+    <pre>
+                <p id = "code">EXEMPLO:</p>
+                <p>&lt;h1 style="font-family:verdana;">This is a heading&lt;/h1>
+                    &lt;p style="font-family:courier;">This is a paragraph.&lt;/p>
+                </p>
+    </pre>
+            <h3>Tamanho do Texto</h3>
+                <p>A propriedade CSS font-size define o tamanho do texto para um elemento HTML:</p>
+    <pre>
+                    &lt;<p id = "code">EXEMPLO:</p>
+                <p>&lt;h1 style="font-size:300%;">This is a heading&lt;/h1>
+                    &lt;p style="font-size:160%;">This is a paragraph.&lt;/p>
+                </p>
+    </pre>
+            <h3>Alinhamento do Texto</h3>
+                <p>A propriedade CSS text-align define o alinhamento horizontal do texto para um elemento HTML:</p>
+    <pre>
+                    &lt;<p id = "code">EXEMPLO:</p>
+                <p>&lt;h1 style="text-align:center;">Centered Heading&lt;/h1>
+                    &lt;p style="text-align:center;">Centered paragraph.&lt;/p>
+                </p>
+    </pre>
+            <h3>Resumindo todos os estilos citados acima:</h3>
+                    <ul>
+                        <li>Use o style atributo para estilizar elementos HTML</li>
+                        <li>Use background-color para cor de fundo</li>
+                        <li>Use color para cores de texto</li>
+                        <li>Use font-family para fontes de texto</li>
+                        <li>Use font-size para tamanhos de texto</li>
+                        <li>Use text-align para alinhamento de texto</li>
+                    </ul>
+        <h1 id = "22"> Comentários HTML</h1>
+                <p>Os comentários HTML não são exibidos no navegador, mas podem ajudar a documentar seu código-fonte HTML.</p>
+                <p>Você pode adicionar comentários à sua fonte HTML usando a seguinte sintaxe:</p>
+            <pre>
+                    &lt;<p id = "code">EXEMPLO:</p>
+                <p> &lt;!-- Aqui está o seu comentário --> </p>
+    </pre>
+                <p>Observe que o ponto de (!) só é utilizado no início</p>
+                <p>Os comentários podem ser usados ​​para ocultar o conteúdo.</p>
+                <p>Isso pode ser útil se você ocultar o conteúdo temporariamente</p>
+                <p>Você também pode ocultar mais de uma linha. Tudo entre o &lt;!--e o --> ficará oculto na tela.</p>
+                <p>Comentários também são ótimos para depurar HTML, porque você pode comentar linhas de código HTML, uma de cada vez, para procurar erros.</p>
+                <pre>
+                    &lt;<p id = "code">EXEMPLO:</p>
+                <p> &lt;p>Este é um parágrafo&lt;/p>
+                &lt;!--
+                &lt;p>Aqui pode ser uma imagem de um lindo cuscuz:&lt;/p>
+                &lt;img border="0" src="pic_trulli.jpg" alt="Trulli">
+                -->
+                &lt;p>Aqui também pode ser um parágrafo.&lt;/p>
+                </p>
+    </pre>
+            <h1 id = "24"> Imagens </h1>
+            <p>As imagens podem melhorar o design e a aparência de uma página da web.</p>
+    <pre>
+                &lt;<p id = "code">EXEMPLO:</p>
+            <p> &lt;img src="pic_trulli.jpg" alt="Italian Trulli"> </p>
+    </pre>
+        <h3>Sintaxe de Imagens HTML</h3>
+        <p>A tag HTML &lt;img>é usada para incorporar uma imagem em uma página da web.</p>
+        <p>As imagens não são tecnicamente inseridas em uma página da web; as imagens estão vinculadas a páginas da web. A &lt;img>tag cria um espaço de retenção para a imagem referenciada.</p>   
+        <p>A &lt;img>tag está vazia, contém apenas atributos e não possui uma tag de fechamento.</p>
+        <p>A &lt;img>tag tem dois atributos obrigatórios: src - Especifica o caminho para a imagem, alt - Especifica um texto alternativo para a imagem </p>
+    <pre>
+            &lt;<p id = "code">EXEMPLO:</p>
+        <p> &lt;img src="url" alt="alternatetext"></p>
+    </pre>  
+        <h3>Resolução de imagens</h3>
+        <p>A resolução das imagens está ligada a quantidade de pixels que você define.</p>
+        <pre>
+            &lt;<p id = "code">EXEMPLO:</p>
+       <p> &lt;p> &lt;img src="images/Cuscuz com ovos.jpg" alt="" width="128" height="128">&lt;/p>
+        <p> <img src="images/Cuscuz com ovos.jpg" alt="" width="128" height="128"></p>
+       <p> &lt;p>&lt;img src="images/Cuscuz com ovos.jpg" alt="" width="100" height="128">&lt;/p>
+        <p><img src="images/Cuscuz com ovos.jpg" alt="" width="100" height="128"></p></p>
+        <p>&lt;img src="images/Cuscuz com ovos.jpg" alt=""style="width:128px;height:128px;">&lt;/p></p>
+        <p><img src="images/Cuscuz com ovos.jpg" alt=""style="width:128px;height:128px;"></p></p>
+        <p>&lt;img src="images/Cuscuz com ovos.jpg" alt=""style="width:100px;height:128px;">&lt;/p></p>
+        <p><img src="images/Cuscuz com ovos.jpg" alt=""style="width:100px;height:128px;"></p></p>
+    </p>
+    </pre>  
+    <h1 id = "26"> Tabelas </h1>
+    <p>As tabelas HTML permitem que os desenvolvedores da Web organizem os dados em linhas e colunas.</p>
+    <pre>
+        &lt;<p id = "code">EXEMPLO:</p>
+    <p> <table>
+        <tr>
+          <th>Ovinho</th>
+          <th>Caipira</th>
+          <th>Bahia</th>
+        </tr>
+        <tr>
+          <td>Fubá</td>
+          <td>Milho</td>
+          <td>Nordeste</td>
+        </tr>
+        <tr>
+          <td>Coscuz</td>
+          <td>Amarelinho</td>
+          <td>Brasil</td>
+        </tr>
+      </table> </p>
+</pre> 
+<h3>Células da tabela</h3>
+    <p>Cada célula da tabela é definida por um &lt;td>e uma &lt;/td>tag.</p>
+    <p>td significa dados da tabela.</p>
+    <p>Tudo entre &lt;td>e &lt;/td>são o conteúdo da célula da tabela.</p>
+    <pre>
+        &lt;<p id = "code">EXEMPLO:</p>
+    <p> <table>
+        <tr>
+          <td>Cuscuz</td>
+          <td>Ovo</td>
+          <td>Milho</td>
+        </tr>
+      </table></p>
+</pre> 
+<h3>Linhas da tabela</h3>
+<p>Cada linha da tabela começa com um &lt;tr>e termina com uma &lt;/tr>tag.</p>
+<p>tr significa linha da tabela.</p>
+<pre>
+    &lt;<p id = "code">EXEMPLO:</p>
+<p> <table>
+    <tr>
+      <td>Cuscuz</td>
+      <td>Ovo</td>
+      <td>LMilho</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>14</td>
+      <td>10</td>
+    </tr>
+  </table></p>
+</pre> 
+<p>Você pode ter quantas linhas quiser em uma tabela; apenas certifique-se de que o número de células seja o mesmo em cada linha.</p>
+<h3>Cabeçalhos de uma tabela</h3>
+<p> Às vezes, você deseja que suas células sejam células de cabeçalho de tabela. Nesses casos, use a &lt;th>tag em vez da <td>tag:</p>
+    <p>th significa cabeçalho da tabela.</p>
+    <pre>
+        &lt;<p id = "code">EXEMPLO:</p>
+        <p><table>
+            <tr>
+              <th>Opção 1</th>
+              <th>Opção 2</th>
+              <th>Opção 3</th>
+            </tr>
+            <tr>
+              <td>Cuscuz</td>
+              <td>Ovo</td>
+              <td>Milho</td>
+            </tr>
+            <tr>
+              <td>16</td>
+              <td>14</td>
+              <td>10</td>
+            </tr>
+          </table></p>
+    </pre>
+    <h1 id = "27"> Listas </h1>
+    <p>As listas HTML permitem que os desenvolvedores da Web agrupem um conjunto de itens relacionados em listas. Elas podem ser ordenadas ou não</p>
+    <h3>Listas não ordenadas</h3>     
+    <p>Uma lista não ordenada começa com a &lt;ul>tag. Cada item da lista começa com a &lt;li>tag.</p> 
+    <p>Os itens da lista serão marcados com marcadores (pequenos círculos pretos) por padrão:</p>
+    <pre>
+        <p id = "code">EXEMPLO:</p>
+        <p>
+            <li>Cuscuz</li>
+            <li>Ovo</li>
+            <li>Milho</li>
+          </p>
+        </pre>
+          <h3>Listas Ordenadas</h3>
+          <p>Uma lista ordenada começa com a &lt;ol>tag. Cada item da lista começa com a &lt;li>tag.</p>
+          <p>Os itens da lista serão marcados com números por padrão:</p>
+          <pre>
+            <p id = "code">EXEMPLO:</p>
+            <p>
+                <ol>
+                    <li>Cuscuz</li>
+                    <li>Ovo</li>
+                    <li>Milho</li>
+                  </ol>
+              </p>
+            </pre>
+<h1 id = "28"> Bloco de HTML </h1>
+        <p>Um elemento de nível de bloco sempre começa em uma nova linha e os navegadores adicionam automaticamente algum espaço (uma margem) antes e depois do elemento.</p>
+        <p>Um elemento de nível de bloco sempre ocupa toda a largura disponível (estende-se para a esquerda e para a direita o máximo possível).</p>
+        <p>Dois elementos de bloco comumente usados ​​são: &lt;p> e &lt;div>. O P ja foi falado anteriormente, agora vou explicar um pouco mais sobre o div</p>
+        <p>O &lt;div>elemento define uma divisão ou uma seção em um documento HTML.</p>
+        <p>O elemento &lt;div> é um elemento de nível de bloco.</p>
+        <pre>
+            <p id = "code"> EXEMPLO:</p>
+            <div>Hello World</div>
+        </pre>
+
+    </div>
+         <!-- FIM DO BLOCO DE EXEMPLO -->
 
         </main>
 
